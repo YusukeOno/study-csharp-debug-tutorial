@@ -34,7 +34,6 @@ namespace Csv2DataGridView
                 TextFieldType = FieldType.Delimited
             };
             parser.SetDelimiters(","); // 区切り文字はコンマ
-            string[] colheaders = parser.ReadFields(); // 1行読み込み
 
             while (!parser.EndOfData)
             {
