@@ -29,6 +29,8 @@ namespace Csv2DataGridView
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            dataGridView1.Rows.Clear(); // DGV初期化
+
             TextFieldParser parser = new TextFieldParser(csvFilePath.Text, Encoding.GetEncoding("Shift_JIS"))
             {
                 TextFieldType = FieldType.Delimited
